@@ -1,12 +1,7 @@
-import { ReactNode } from "react";
+import React from "react";
 
-interface Props {
-  children: ReactNode;
-}
-
-const Alert = ({ children }: Props) => {
-  return <div className="alert alert-primary alert-dismissible">{children}</div>;
-  <button type="button" className="btn-close "data-bs-dismiss
+const Alert = () => {
+  return <div>Alert</div>;
 };
 
 export default Alert;

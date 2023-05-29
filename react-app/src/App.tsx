@@ -1,18 +1,12 @@
 import { useState } from "react";
-import Alert from "./components/Alert";
-import { Button } from "./components/Button";
+import { Form } from "./components/Form";
 
-function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
-
+export const App = () => {
   return (
     <div>
-      {alertVisible && <Alert>My alert</Alert>}
-      <Button color="secondary" onClick={() => setAlertVisibility(true)}>
-        My Button
-      </Button>
+      <Form />
     </div>
   );
-}
+};
 
 export default App;
